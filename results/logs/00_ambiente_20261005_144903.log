@@ -1,0 +1,17 @@
+2026-10-05 14:49:43 | INFO     | env_info | Python 3.11.17 em <USUARIO>\envs\tcc-hidrico\python.exe
+2026-10-05 14:49:43 | INFO     | env_info | pandas        3.0.6
+2026-10-05 14:49:43 | INFO     | env_info | numpy         2.4.6
+2026-10-05 14:49:43 | INFO     | env_info | scipy         1.17.1
+2026-10-05 14:49:43 | INFO     | env_info | statsmodels   0.15.0
+2026-10-05 14:49:43 | INFO     | env_info | scikit-learn  1.9.1
+2026-10-05 14:49:43 | INFO     | env_info | lightgbm      4.7.0
+2026-10-05 14:49:43 | INFO     | env_info | matplotlib    3.11.2
+2026-10-05 14:49:43 | INFO     | env_info | openpyxl      3.1.5
+2026-10-05 14:49:43 | INFO     | env_info | pyarrow       25.0.1
+2026-10-05 14:49:43 | INFO     | env_info | psutil        7.2.2
+2026-10-05 14:49:43 | INFO     | env_info | pyyaml        6.0.3
+2026-10-05 14:49:43 | INFO     | env_info | pytest        9.1.1
+2026-10-05 14:49:43 | INFO     | env_info | Pastas ausentes: nenhuma
+2026-10-05 14:49:43 | INFO     | env_info | Chaves ausentes no config: nenhuma
+2026-10-05 14:49:43 | INFO     | env_info | Base original: {'path': '<PASTA_TCC>\\SANEPAR_B_ALTO_2018_20.xlsx', 'exists': True, 'size_mb': 2.94, 'modified': '2026-07-24T14:13:59', 'readable': True}
+2026-10-05 14:49:43 | INFO     | env_info | Relatório salvo em <PROJETO>\results\reports\00_ambiente.md

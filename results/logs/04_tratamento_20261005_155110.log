@@ -1,0 +1,5 @@
+2026-10-05 15:51:10 | INFO     | treatment | Realinhamento −1 h de 1389 registros (2018-11-04 01:00:00 até a 1ª ocorrência de 2018-12-31 21:00:00).
+2026-10-05 15:51:10 | INFO     | treatment | Grade horária regular; pontos interpolados: 0 [].
+2026-10-05 15:51:10 | INFO     | treatment | LT01 interpolado linearmente em 3 registro(s), trechos [['2019-01-30 06:00', '2019-01-30 08:00']].
+2026-10-05 15:51:10 | INFO     | treatment | Episódios de nível baixo mantidos (decisão do usuário).
+2026-10-05 15:51:10 | INFO     | treatment | Validações: {'ordenado': True, 'sem_duplicados': True, 'sem_lacunas': True, 'frequencia_1h': True, 'sem_nan': True, 'sem_inf': True}

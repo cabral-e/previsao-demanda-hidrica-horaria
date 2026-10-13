@@ -1,0 +1,552 @@
+{
+  "inicio": {
+    "ts": "2026-10-05T18:09:56",
+    "ram_livre_gb": 1.78,
+    "ram_total_gb": 7.86,
+    "cpu_percent_1s": 16.3,
+    "cpu_freq_mhz": 1600,
+    "na_tomada": true,
+    "bateria_pct": 100,
+    "n_processos": 237,
+    "top_processos_mb": [
+      [
+        "claude.exe",
+        481
+      ],
+      [
+        "MemCompression",
+        408
+      ],
+      [
+        "MsMpEng.exe",
+        349
+      ],
+      [
+        "Dropbox.exe",
+        267
+      ],
+      [
+        "claude.exe",
+        244
+      ],
+      [
+        "explorer.exe",
+        183
+      ],
+      [
+        "chrome.exe",
+        180
+      ],
+      [
+        "python.exe",
+        177
+      ]
+    ]
+  },
+  "etapas": [
+    {
+      "modelo": "baselines",
+      "antes": {
+        "ts": "2026-10-05T18:09:57",
+        "ram_livre_gb": 1.81,
+        "ram_total_gb": 7.86,
+        "cpu_percent_1s": 19.1,
+        "cpu_freq_mhz": 1600,
+        "na_tomada": true,
+        "bateria_pct": 100,
+        "n_processos": 237,
+        "top_processos_mb": [
+          [
+            "claude.exe",
+            483
+          ],
+          [
+            "MemCompression",
+            408
+          ],
+          [
+            "MsMpEng.exe",
+            347
+          ],
+          [
+            "Dropbox.exe",
+            267
+          ],
+          [
+            "claude.exe",
+            244
+          ],
+          [
+            "explorer.exe",
+            183
+          ],
+          [
+            "chrome.exe",
+            179
+          ],
+          [
+            "python.exe",
+            177
+          ]
+        ]
+      },
+      "depois": {
+        "ts": "2026-10-05T18:10:06",
+        "ram_livre_gb": 1.78,
+        "ram_total_gb": 7.86,
+        "cpu_percent_1s": 19.5,
+        "cpu_freq_mhz": 1400,
+        "na_tomada": true,
+        "bateria_pct": 100,
+        "n_processos": 237,
+        "top_processos_mb": [
+          [
+            "claude.exe",
+            482
+          ],
+          [
+            "MemCompression",
+            408
+          ],
+          [
+            "MsMpEng.exe",
+            344
+          ],
+          [
+            "Dropbox.exe",
+            267
+          ],
+          [
+            "claude.exe",
+            243
+          ],
+          [
+            "python.exe",
+            202
+          ],
+          [
+            "explorer.exe",
+            183
+          ],
+          [
+            "chrome.exe",
+            180
+          ]
+        ]
+      },
+      "duracao_lote_s": 9.0361539000005
+    },
+    {
+      "modelo": "lightgbm",
+      "antes": {
+        "ts": "2026-10-05T18:10:08",
+        "ram_livre_gb": 1.78,
+        "ram_total_gb": 7.86,
+        "cpu_percent_1s": 27.3,
+        "cpu_freq_mhz": 1600,
+        "na_tomada": true,
+        "bateria_pct": 100,
+        "n_processos": 236,
+        "top_processos_mb": [
+          [
+            "claude.exe",
+            482
+          ],
+          [
+            "MemCompression",
+            408
+          ],
+          [
+            "MsMpEng.exe",
+            346
+          ],
+          [
+            "Dropbox.exe",
+            267
+          ],
+          [
+            "claude.exe",
+            243
+          ],
+          [
+            "python.exe",
+            202
+          ],
+          [
+            "explorer.exe",
+            183
+          ],
+          [
+            "chrome.exe",
+            180
+          ]
+        ]
+      },
+      "depois": {
+        "ts": "2026-10-05T18:10:35",
+        "ram_livre_gb": 1.71,
+        "ram_total_gb": 7.86,
+        "cpu_percent_1s": 12.8,
+        "cpu_freq_mhz": 1600,
+        "na_tomada": true,
+        "bateria_pct": 100,
+        "n_processos": 239,
+        "top_processos_mb": [
+          [
+            "claude.exe",
+            500
+          ],
+          [
+            "MemCompression",
+            408
+          ],
+          [
+            "MsMpEng.exe",
+            348
+          ],
+          [
+            "Dropbox.exe",
+            267
+          ],
+          [
+            "claude.exe",
+            249
+          ],
+          [
+            "python.exe",
+            211
+          ],
+          [
+            "explorer.exe",
+            183
+          ],
+          [
+            "chrome.exe",
+            180
+          ]
+        ]
+      },
+      "duracao_lote_s": 27.061024700000416
+    },
+    {
+      "modelo": "lightgbm_rec",
+      "antes": {
+        "ts": "2026-10-05T18:10:36",
+        "ram_livre_gb": 1.71,
+        "ram_total_gb": 7.86,
+        "cpu_percent_1s": 20.0,
+        "cpu_freq_mhz": 1400,
+        "na_tomada": true,
+        "bateria_pct": 100,
+        "n_processos": 239,
+        "top_processos_mb": [
+          [
+            "claude.exe",
+            496
+          ],
+          [
+            "MemCompression",
+            408
+          ],
+          [
+            "MsMpEng.exe",
+            347
+          ],
+          [
+            "Dropbox.exe",
+            267
+          ],
+          [
+            "claude.exe",
+            250
+          ],
+          [
+            "python.exe",
+            211
+          ],
+          [
+            "explorer.exe",
+            183
+          ],
+          [
+            "chrome.exe",
+            180
+          ]
+        ]
+      },
+      "depois": {
+        "ts": "2026-10-05T18:13:05",
+        "ram_livre_gb": 1.77,
+        "ram_total_gb": 7.86,
+        "cpu_percent_1s": 28.3,
+        "cpu_freq_mhz": 1600,
+        "na_tomada": true,
+        "bateria_pct": 100,
+        "n_processos": 239,
+        "top_processos_mb": [
+          [
+            "claude.exe",
+            476
+          ],
+          [
+            "MemCompression",
+            421
+          ],
+          [
+            "MsMpEng.exe",
+            335
+          ],
+          [
+            "Dropbox.exe",
+            267
+          ],
+          [
+            "claude.exe",
+            237
+          ],
+          [
+            "python.exe",
+            208
+          ],
+          [
+            "explorer.exe",
+            185
+          ],
+          [
+            "chrome.exe",
+            179
+          ]
+        ]
+      },
+      "duracao_lote_s": 148.9726406000009
+    },
+    {
+      "modelo": "svr",
+      "antes": {
+        "ts": "2026-10-05T18:13:07",
+        "ram_livre_gb": 1.79,
+        "ram_total_gb": 7.86,
+        "cpu_percent_1s": 16.8,
+        "cpu_freq_mhz": 1600,
+        "na_tomada": true,
+        "bateria_pct": 100,
+        "n_processos": 239,
+        "top_processos_mb": [
+          [
+            "claude.exe",
+            475
+          ],
+          [
+            "MemCompression",
+            420
+          ],
+          [
+            "MsMpEng.exe",
+            337
+          ],
+          [
+            "Dropbox.exe",
+            267
+          ],
+          [
+            "claude.exe",
+            237
+          ],
+          [
+            "python.exe",
+            208
+          ],
+          [
+            "explorer.exe",
+            185
+          ],
+          [
+            "chrome.exe",
+            179
+          ]
+        ]
+      },
+      "depois": {
+        "ts": "2026-10-05T18:21:13",
+        "ram_livre_gb": 1.83,
+        "ram_total_gb": 7.86,
+        "cpu_percent_1s": 20.7,
+        "cpu_freq_mhz": 400,
+        "na_tomada": true,
+        "bateria_pct": 100,
+        "n_processos": 242,
+        "top_processos_mb": [
+          [
+            "claude.exe",
+            463
+          ],
+          [
+            "MemCompression",
+            376
+          ],
+          [
+            "MsMpEng.exe",
+            348
+          ],
+          [
+            "Dropbox.exe",
+            268
+          ],
+          [
+            "python.exe",
+            257
+          ],
+          [
+            "claude.exe",
+            240
+          ],
+          [
+            "explorer.exe",
+            184
+          ],
+          [
+            "chrome.exe",
+            179
+          ]
+        ]
+      },
+      "duracao_lote_s": 485.6958136999965
+    },
+    {
+      "modelo": "sarima",
+      "antes": {
+        "ts": "2026-10-05T18:21:14",
+        "ram_livre_gb": 1.83,
+        "ram_total_gb": 7.86,
+        "cpu_percent_1s": 18.6,
+        "cpu_freq_mhz": 600,
+        "na_tomada": true,
+        "bateria_pct": 100,
+        "n_processos": 241,
+        "top_processos_mb": [
+          [
+            "claude.exe",
+            463
+          ],
+          [
+            "MemCompression",
+            376
+          ],
+          [
+            "MsMpEng.exe",
+            350
+          ],
+          [
+            "Dropbox.exe",
+            268
+          ],
+          [
+            "python.exe",
+            257
+          ],
+          [
+            "claude.exe",
+            240
+          ],
+          [
+            "explorer.exe",
+            184
+          ],
+          [
+            "chrome.exe",
+            179
+          ]
+        ]
+      },
+      "depois": {
+        "ts": "2026-10-05T18:46:02",
+        "ram_livre_gb": 1.82,
+        "ram_total_gb": 7.86,
+        "cpu_percent_1s": 20.3,
+        "cpu_freq_mhz": 700,
+        "na_tomada": true,
+        "bateria_pct": 100,
+        "n_processos": 235,
+        "top_processos_mb": [
+          [
+            "claude.exe",
+            447
+          ],
+          [
+            "MemCompression",
+            400
+          ],
+          [
+            "MsMpEng.exe",
+            338
+          ],
+          [
+            "Dropbox.exe",
+            286
+          ],
+          [
+            "python.exe",
+            262
+          ],
+          [
+            "claude.exe",
+            227
+          ],
+          [
+            "chrome.exe",
+            186
+          ],
+          [
+            "explorer.exe",
+            183
+          ]
+        ]
+      },
+      "duracao_lote_s": 1487.8096724000025
+    }
+  ],
+  "fim": {
+    "ts": "2026-10-05T18:46:03",
+    "ram_livre_gb": 1.82,
+    "ram_total_gb": 7.86,
+    "cpu_percent_1s": 20.7,
+    "cpu_freq_mhz": 400,
+    "na_tomada": true,
+    "bateria_pct": 100,
+    "n_processos": 235,
+    "top_processos_mb": [
+      [
+        "claude.exe",
+        448
+      ],
+      [
+        "MemCompression",
+        400
+      ],
+      [
+        "MsMpEng.exe",
+        338
+      ],
+      [
+        "Dropbox.exe",
+        286
+      ],
+      [
+        "python.exe",
+        262
+      ],
+      [
+        "claude.exe",
+        227
+      ],
+      [
+        "chrome.exe",
+        186
+      ],
+      [
+        "explorer.exe",
+        183
+      ]
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+2026-10-05 15:33:03 | INFO     | eda | Corte 2019-08-08 00:00:00: treino 14016, teste 3504
+2026-10-05 15:33:05 | INFO     | eda | Estacionariedade Nível: ADF p=5.26e-22, KPSS p=0.1 -> estacionária (ADF e KPSS concordam)
+2026-10-05 15:33:07 | INFO     | eda | Estacionariedade Δ1 (1ª diferença): ADF p=0, KPSS p=0.1 -> estacionária (ADF e KPSS concordam)
+2026-10-05 15:33:09 | INFO     | eda | Estacionariedade Δ24 (sazonal): ADF p=0, KPSS p=0.1 -> estacionária (ADF e KPSS concordam)
+2026-10-05 15:33:11 | INFO     | eda | Estacionariedade Δ1Δ24: ADF p=0, KPSS p=0.1 -> estacionária (ADF e KPSS concordam)
+2026-10-05 15:33:27 | INFO     | eda | Forças MSTL: {'Tendência': 0.4713888238461512, 'Sazonal 24 h': 0.6623803121581593, 'Sazonal 168 h': 0.4596631926063298}
+2026-10-05 15:33:55 | INFO     | eda | EDA concluída: 24 figuras; relatório <PROJETO>\results\reports\03_eda.md

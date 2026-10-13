@@ -1,0 +1,6 @@
+2026-10-05 17:21:57 | INFO     | svr | Tuning já realizado com mesma entrada e configuração; reutilizando.
+2026-10-05 17:24:56 | INFO     | svr | svr h=1 [exp_20261005_1724_svr_h01_v001]: MAE teste 0.0589 | RMSE teste 0.0916 | t_treino 33.369s | t_prev 5.572s | mem 212.2 MB
+2026-10-05 17:27:05 | INFO     | svr | svr h=6 [exp_20261005_1727_svr_h06_v001]: MAE teste 0.2071 | RMSE teste 0.2990 | t_treino 20.701s | t_prev 6.101s | mem 205.8 MB
+2026-10-05 17:28:58 | INFO     | svr | svr h=12 [exp_20261005_1728_svr_h12_v001]: MAE teste 0.2509 | RMSE teste 0.3650 | t_treino 16.165s | t_prev 6.560s | mem 156.1 MB
+2026-10-05 17:31:16 | INFO     | svr | svr h=24 [exp_20261005_1731_svr_h24_v001]: MAE teste 0.2769 | RMSE teste 0.3968 | t_treino 18.379s | t_prev 7.876s | mem 157.6 MB
+2026-10-05 17:31:16 | INFO     | svr | Relatório: <PROJETO>\results\reports\09_svr.md

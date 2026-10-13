@@ -1,0 +1,12 @@
+2026-10-05 16:14:16 | INFO     | sarima | Seleção em 2019-02-07 00:00:00 a 2019-08-07 23:00:00 (4368 h, somente treino)
+2026-10-05 16:14:57 | INFO     | sarima | (1,0,0)(0,1,1)24 fourier_K2: BIC -5696.0 AIC -5740.7 conv True 40.2s
+2026-10-05 16:16:10 | INFO     | sarima | (1,0,0)(1,1,1)24 fourier_K2: BIC -5820.5 AIC -5871.6 conv True 70.7s
+2026-10-05 16:17:05 | INFO     | sarima | (1,0,1)(0,1,1)24 fourier_K2: BIC -7039.4 AIC -7090.5 conv True 53.7s
+2026-10-05 16:18:39 | INFO     | sarima | (1,0,1)(1,1,1)24 fourier_K2: BIC -7119.2 AIC -7176.6 conv True 91.1s
+2026-10-05 16:19:39 | INFO     | sarima | (2,0,0)(0,1,1)24 fourier_K2: BIC -7093.4 AIC -7144.5 conv True 59.0s
+2026-10-05 16:21:18 | INFO     | sarima | (2,0,0)(1,1,1)24 fourier_K2: BIC -7162.2 AIC -7219.6 conv True 96.4s
+2026-10-05 16:22:23 | INFO     | sarima | (2,0,1)(0,1,1)24 fourier_K2: BIC -7170.5 AIC -7227.9 conv True 62.8s
+2026-10-05 16:23:34 | INFO     | sarima | (2,0,1)(1,1,1)24 fourier_K2: BIC -7235.1 AIC -7299.0 conv True 68.8s
+2026-10-05 16:25:26 | INFO     | sarima | exógena fourier_K3: BIC -7240.8 conv True
+2026-10-05 16:29:06 | INFO     | sarima | exógena dow: BIC -7191.0 conv True
+2026-10-05 16:29:06 | INFO     | sarima | Escolhido: {'order': [2, 0, 1], 'seasonal': [1, 0, 1], 'exog': {'kind': 'fourier', 'K': 3}}; custo total da seleção 890.3 s

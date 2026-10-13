@@ -1,0 +1,53 @@
+2026-10-05 17:52:09 | INFO     | lightgbm | h=1 leaves=15 mcs=20 λ=0: RMSE 0.0934 | árvores 819 | 2.6s
+2026-10-05 17:52:12 | INFO     | lightgbm | h=1 leaves=15 mcs=20 λ=1: RMSE 0.0944 | árvores 762 | 2.4s
+2026-10-05 17:52:16 | INFO     | lightgbm | h=1 leaves=15 mcs=50 λ=0: RMSE 0.0962 | árvores 1016 | 3.6s
+2026-10-05 17:52:19 | INFO     | lightgbm | h=1 leaves=15 mcs=50 λ=1: RMSE 0.0969 | árvores 690 | 2.3s
+2026-10-05 17:52:22 | INFO     | lightgbm | h=1 leaves=31 mcs=20 λ=0: RMSE 0.0945 | árvores 474 | 2.7s
+2026-10-05 17:52:24 | INFO     | lightgbm | h=1 leaves=31 mcs=20 λ=1: RMSE 0.0948 | árvores 454 | 2.4s
+2026-10-05 17:52:27 | INFO     | lightgbm | h=1 leaves=31 mcs=50 λ=0: RMSE 0.0963 | árvores 516 | 2.7s
+2026-10-05 17:52:30 | INFO     | lightgbm | h=1 leaves=31 mcs=50 λ=1: RMSE 0.0967 | árvores 483 | 2.7s
+2026-10-05 17:52:33 | INFO     | lightgbm | h=1 leaves=63 mcs=20 λ=0: RMSE 0.0947 | árvores 274 | 2.5s
+2026-10-05 17:52:35 | INFO     | lightgbm | h=1 leaves=63 mcs=20 λ=1: RMSE 0.0948 | árvores 205 | 2.2s
+2026-10-05 17:52:38 | INFO     | lightgbm | h=1 leaves=63 mcs=50 λ=0: RMSE 0.0970 | árvores 303 | 3.0s
+2026-10-05 17:52:41 | INFO     | lightgbm | h=1 leaves=63 mcs=50 λ=1: RMSE 0.0978 | árvores 237 | 2.7s
+2026-10-05 17:52:41 | INFO     | lightgbm | h=1 escolhido {'learning_rate': 0.05, 'subsample': 0.8, 'subsample_freq': 1, 'colsample_bytree': 0.9, 'objective': 'regression', 'deterministic': True, 'force_row_wise': True, 'num_leaves': 15, 'min_child_samples': 20, 'reg_lambda': 0.0, 'n_estimators': 819} (RMSE val 0.0934)
+2026-10-05 17:52:42 | INFO     | lightgbm | h=6 leaves=15 mcs=20 λ=0: RMSE 0.3081 | árvores 224 | 1.0s
+2026-10-05 17:52:44 | INFO     | lightgbm | h=6 leaves=15 mcs=20 λ=1: RMSE 0.3086 | árvores 246 | 1.0s
+2026-10-05 17:52:45 | INFO     | lightgbm | h=6 leaves=15 mcs=50 λ=0: RMSE 0.3078 | árvores 327 | 1.2s
+2026-10-05 17:52:46 | INFO     | lightgbm | h=6 leaves=15 mcs=50 λ=1: RMSE 0.3072 | árvores 254 | 1.1s
+2026-10-05 17:52:47 | INFO     | lightgbm | h=6 leaves=31 mcs=20 λ=0: RMSE 0.3052 | árvores 140 | 1.1s
+2026-10-05 17:52:48 | INFO     | lightgbm | h=6 leaves=31 mcs=20 λ=1: RMSE 0.3064 | árvores 141 | 1.1s
+2026-10-05 17:52:50 | INFO     | lightgbm | h=6 leaves=31 mcs=50 λ=0: RMSE 0.3094 | árvores 154 | 1.1s
+2026-10-05 17:52:51 | INFO     | lightgbm | h=6 leaves=31 mcs=50 λ=1: RMSE 0.3075 | árvores 133 | 1.0s
+2026-10-05 17:52:52 | INFO     | lightgbm | h=6 leaves=63 mcs=20 λ=0: RMSE 0.3093 | árvores 106 | 1.4s
+2026-10-05 17:52:54 | INFO     | lightgbm | h=6 leaves=63 mcs=20 λ=1: RMSE 0.3117 | árvores 117 | 1.5s
+2026-10-05 17:52:55 | INFO     | lightgbm | h=6 leaves=63 mcs=50 λ=0: RMSE 0.3103 | árvores 121 | 1.4s
+2026-10-05 17:52:57 | INFO     | lightgbm | h=6 leaves=63 mcs=50 λ=1: RMSE 0.3096 | árvores 132 | 1.6s
+2026-10-05 17:52:57 | INFO     | lightgbm | h=6 escolhido {'learning_rate': 0.05, 'subsample': 0.8, 'subsample_freq': 1, 'colsample_bytree': 0.9, 'objective': 'regression', 'deterministic': True, 'force_row_wise': True, 'num_leaves': 31, 'min_child_samples': 20, 'reg_lambda': 0.0, 'n_estimators': 140} (RMSE val 0.3052)
+2026-10-05 17:52:58 | INFO     | lightgbm | h=12 leaves=15 mcs=20 λ=0: RMSE 0.3824 | árvores 167 | 0.8s
+2026-10-05 17:52:59 | INFO     | lightgbm | h=12 leaves=15 mcs=20 λ=1: RMSE 0.3817 | árvores 142 | 0.8s
+2026-10-05 17:52:59 | INFO     | lightgbm | h=12 leaves=15 mcs=50 λ=0: RMSE 0.3778 | árvores 151 | 0.8s
+2026-10-05 17:53:00 | INFO     | lightgbm | h=12 leaves=15 mcs=50 λ=1: RMSE 0.3816 | árvores 227 | 1.0s
+2026-10-05 17:53:02 | INFO     | lightgbm | h=12 leaves=31 mcs=20 λ=0: RMSE 0.3811 | árvores 140 | 1.1s
+2026-10-05 17:53:03 | INFO     | lightgbm | h=12 leaves=31 mcs=20 λ=1: RMSE 0.3804 | árvores 96 | 0.9s
+2026-10-05 17:53:04 | INFO     | lightgbm | h=12 leaves=31 mcs=50 λ=0: RMSE 0.3799 | árvores 99 | 0.9s
+2026-10-05 17:53:05 | INFO     | lightgbm | h=12 leaves=31 mcs=50 λ=1: RMSE 0.3795 | árvores 105 | 1.0s
+2026-10-05 17:53:06 | INFO     | lightgbm | h=12 leaves=63 mcs=20 λ=0: RMSE 0.3843 | árvores 102 | 1.5s
+2026-10-05 17:53:08 | INFO     | lightgbm | h=12 leaves=63 mcs=20 λ=1: RMSE 0.3838 | árvores 105 | 1.8s
+2026-10-05 17:53:09 | INFO     | lightgbm | h=12 leaves=63 mcs=50 λ=0: RMSE 0.3837 | árvores 95 | 1.4s
+2026-10-05 17:53:11 | INFO     | lightgbm | h=12 leaves=63 mcs=50 λ=1: RMSE 0.3829 | árvores 97 | 1.4s
+2026-10-05 17:53:11 | INFO     | lightgbm | h=12 escolhido {'learning_rate': 0.05, 'subsample': 0.8, 'subsample_freq': 1, 'colsample_bytree': 0.9, 'objective': 'regression', 'deterministic': True, 'force_row_wise': True, 'num_leaves': 15, 'min_child_samples': 50, 'reg_lambda': 0.0, 'n_estimators': 151} (RMSE val 0.3778)
+2026-10-05 17:53:12 | INFO     | lightgbm | h=24 leaves=15 mcs=20 λ=0: RMSE 0.4354 | árvores 61 | 0.5s
+2026-10-05 17:53:12 | INFO     | lightgbm | h=24 leaves=15 mcs=20 λ=1: RMSE 0.4354 | árvores 63 | 0.5s
+2026-10-05 17:53:13 | INFO     | lightgbm | h=24 leaves=15 mcs=50 λ=0: RMSE 0.4327 | árvores 83 | 0.6s
+2026-10-05 17:53:13 | INFO     | lightgbm | h=24 leaves=15 mcs=50 λ=1: RMSE 0.4343 | árvores 90 | 0.6s
+2026-10-05 17:53:14 | INFO     | lightgbm | h=24 leaves=31 mcs=20 λ=0: RMSE 0.4363 | árvores 64 | 0.7s
+2026-10-05 17:53:15 | INFO     | lightgbm | h=24 leaves=31 mcs=20 λ=1: RMSE 0.4359 | árvores 54 | 0.7s
+2026-10-05 17:53:16 | INFO     | lightgbm | h=24 leaves=31 mcs=50 λ=0: RMSE 0.4349 | árvores 56 | 0.7s
+2026-10-05 17:53:16 | INFO     | lightgbm | h=24 leaves=31 mcs=50 λ=1: RMSE 0.4371 | árvores 70 | 0.8s
+2026-10-05 17:53:17 | INFO     | lightgbm | h=24 leaves=63 mcs=20 λ=0: RMSE 0.4367 | árvores 60 | 1.1s
+2026-10-05 17:53:19 | INFO     | lightgbm | h=24 leaves=63 mcs=20 λ=1: RMSE 0.4378 | árvores 55 | 1.1s
+2026-10-05 17:53:20 | INFO     | lightgbm | h=24 leaves=63 mcs=50 λ=0: RMSE 0.4360 | árvores 54 | 1.1s
+2026-10-05 17:53:21 | INFO     | lightgbm | h=24 leaves=63 mcs=50 λ=1: RMSE 0.4378 | árvores 61 | 1.2s
+2026-10-05 17:53:21 | INFO     | lightgbm | h=24 escolhido {'learning_rate': 0.05, 'subsample': 0.8, 'subsample_freq': 1, 'colsample_bytree': 0.9, 'objective': 'regression', 'deterministic': True, 'force_row_wise': True, 'num_leaves': 15, 'min_child_samples': 50, 'reg_lambda': 0.0, 'n_estimators': 83} (RMSE val 0.4327)
+2026-10-05 17:53:21 | INFO     | lightgbm | Tuning concluído: 48 ajustes, 74.7 s

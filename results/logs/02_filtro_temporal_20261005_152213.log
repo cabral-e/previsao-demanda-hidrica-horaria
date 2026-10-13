@@ -1,0 +1,2 @@
+2026-10-05 15:22:13 | INFO     | temporal_filter | Artefato compatível encontrado; reutilizando 02_filtrado_2018_2019.parquet
+2026-10-05 15:22:14 | INFO     | temporal_filter | Selecionado 2018-01-01 00:00:00 a 2019-12-31 23:00:00 (17520); excluído 8760

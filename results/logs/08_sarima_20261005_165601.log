@@ -1,0 +1,6 @@
+2026-10-05 16:56:01 | INFO     | sarima | Seleção já realizada com mesma entrada e configuração; reutilizando.
+2026-10-05 16:56:01 | INFO     | sarima | sarima h=1: reutilizando exp_20261005_1655_sarima_h01_v001
+2026-10-05 16:56:01 | INFO     | sarima | sarima h=6: reutilizando exp_20261005_1655_sarima_h06_v001
+2026-10-05 16:56:01 | INFO     | sarima | sarima h=12: reutilizando exp_20261005_1655_sarima_h12_v001
+2026-10-05 16:56:01 | INFO     | sarima | sarima h=24: reutilizando exp_20261005_1655_sarima_h24_v001
+2026-10-05 16:56:01 | INFO     | sarima | Relatório: <PROJETO>\results\reports\08_sarima.md

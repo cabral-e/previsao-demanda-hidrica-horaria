@@ -1,0 +1,24 @@
+2026-10-05 18:09:57 | INFO     | cost_batch | Estado inicial: {'ts': '2026-10-05T18:09:56', 'ram_livre_gb': 1.78, 'ram_total_gb': 7.86, 'cpu_percent_1s': 16.3, 'cpu_freq_mhz': 1600, 'na_tomada': True, 'bateria_pct': 100, 'n_processos': 237, 'top_processos_mb': [('claude.exe', 481), ('MemCompression', 408), ('MsMpEng.exe', 349), ('Dropbox.exe', 267), ('claude.exe', 244), ('explorer.exe', 183), ('chrome.exe', 180), ('python.exe', 177)]}
+2026-10-05 18:10:07 | INFO     | cost_batch | baselines concluído em 9.0 s (antes: RAM livre 1.81 GB, CPU 19%, tomada True)
+2026-10-05 18:10:09 | INFO     | cost_batch | Tuning já realizado com mesma entrada e configuração; reutilizando.
+2026-10-05 18:10:23 | INFO     | cost_batch | lightgbm h=1 [exp_20261005_1810_lightgbm_h01_v002]: MAE teste 0.0522 | RMSE teste 0.0803 | t_treino 2.443s | t_prev 0.404s | mem 9.7 MB
+2026-10-05 18:10:27 | INFO     | cost_batch | lightgbm h=6 [exp_20261005_1810_lightgbm_h06_v002]: MAE teste 0.1953 | RMSE teste 0.2795 | t_treino 0.770s | t_prev 0.100s | mem 5.8 MB
+2026-10-05 18:10:31 | INFO     | cost_batch | lightgbm h=12 [exp_20261005_1810_lightgbm_h12_v002]: MAE teste 0.2545 | RMSE teste 0.3620 | t_treino 0.686s | t_prev 0.097s | mem 9.3 MB
+2026-10-05 18:10:34 | INFO     | cost_batch | lightgbm h=24 [exp_20261005_1810_lightgbm_h24_v002]: MAE teste 0.2786 | RMSE teste 0.3899 | t_treino 0.435s | t_prev 0.059s | mem 7.1 MB
+2026-10-05 18:10:34 | INFO     | cost_batch | Relatório: <PROJETO>\results\reports\10_lightgbm.md
+2026-10-05 18:10:36 | INFO     | cost_batch | lightgbm concluído em 27.1 s (antes: RAM livre 1.78 GB, CPU 27%, tomada True)
+2026-10-05 18:10:37 | INFO     | cost_batch | Tuning já realizado com mesma entrada e configuração; reutilizando.
+2026-10-05 18:11:59 | INFO     | cost_batch | lightgbm_rec h=1 [exp_20261005_1811_lightgbm_rec_h01_v002]: MAE teste 0.0522 | RMSE teste 0.0803 | t_treino 2.354s | t_prev 0.407s | mem 13.4 MB
+2026-10-05 18:12:08 | INFO     | cost_batch | lightgbm_rec h=6 [exp_20261005_1812_lightgbm_rec_h06_v002]: MAE teste 0.1838 | RMSE teste 0.2724 | t_treino 2.354s | t_prev 2.426s | mem 14.1 MB
+2026-10-05 18:12:27 | INFO     | cost_batch | lightgbm_rec h=12 [exp_20261005_1812_lightgbm_rec_h12_v002]: MAE teste 0.2384 | RMSE teste 0.3524 | t_treino 2.354s | t_prev 4.956s | mem 14.1 MB
+2026-10-05 18:13:05 | INFO     | cost_batch | lightgbm_rec h=24 [exp_20261005_1813_lightgbm_rec_h24_v002]: MAE teste 0.2763 | RMSE teste 0.3947 | t_treino 2.354s | t_prev 9.562s | mem 14.1 MB
+2026-10-05 18:13:06 | INFO     | cost_batch | lightgbm_rec concluído em 149.0 s (antes: RAM livre 1.71 GB, CPU 20%, tomada True)
+2026-10-05 18:13:08 | INFO     | cost_batch | Tuning já realizado com mesma entrada e configuração; reutilizando.
+2026-10-05 18:15:38 | INFO     | cost_batch | svr h=1 [exp_20261005_1815_svr_h01_v002]: MAE teste 0.0589 | RMSE teste 0.0916 | t_treino 28.807s | t_prev 4.306s | mem 207.9 MB
+2026-10-05 18:17:31 | INFO     | cost_batch | svr h=6 [exp_20261005_1817_svr_h06_v002]: MAE teste 0.2071 | RMSE teste 0.2990 | t_treino 18.593s | t_prev 4.833s | mem 212.6 MB
+2026-10-05 18:19:06 | INFO     | cost_batch | svr h=12 [exp_20261005_1819_svr_h12_v002]: MAE teste 0.2509 | RMSE teste 0.3650 | t_treino 13.052s | t_prev 5.425s | mem 143.6 MB
+2026-10-05 18:21:12 | INFO     | cost_batch | svr h=24 [exp_20261005_1821_svr_h24_v002]: MAE teste 0.2769 | RMSE teste 0.3968 | t_treino 16.722s | t_prev 6.991s | mem 164.1 MB
+2026-10-05 18:21:12 | INFO     | cost_batch | Relatório: <PROJETO>\results\reports\09_svr.md
+2026-10-05 18:21:14 | INFO     | cost_batch | svr concluído em 485.7 s (antes: RAM livre 1.79 GB, CPU 17%, tomada True)
+2026-10-05 18:46:03 | INFO     | cost_batch | sarima concluído em 1487.8 s (antes: RAM livre 1.83 GB, CPU 19%, tomada True)
+2026-10-05 18:46:05 | INFO     | cost_batch | Remedição concluída.

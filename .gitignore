@@ -1,0 +1,27 @@
+# Ambientes e caches
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.pytest_cache/
+.vscode/
+.idea/
+
+# Dados (não redistribuídos: base original da Sanepar e derivados com a série completa)
+data/raw/*
+data/interim/*
+data/processed/*
+*.xlsx
+~$*
+
+# Artefatos pesados ou com a série completa
+results/models/*
+results/predictions/*
+
+# Prompts de trabalho (não publicados por decisão do autor)
+PROMPT_*.md
+
+# Figura de referência de terceiros (direitos autorais do trabalho original)
+docs/referencia_grafico_previsao.png
+
+!**/.gitkeep

@@ -1,0 +1,326 @@
+{
+  "gerado_em": "2026-10-05T16:29:06",
+  "janela_selecao": [
+    "2019-02-07 00:00:00",
+    "2019-08-07 23:00:00"
+  ],
+  "n_selecao": 4368,
+  "criterio": "bic",
+  "candidatos_ordem": [
+    {
+      "order": [
+        1,
+        0,
+        0
+      ],
+      "seasonal": [
+        0,
+        0,
+        1
+      ],
+      "exog": "fourier_K2",
+      "exog_spec": {
+        "kind": "fourier",
+        "K": 2
+      },
+      "tempo_s": 40.16211860000112,
+      "ok": true,
+      "erro": null,
+      "aic": -5740.701106006522,
+      "bic": -5696.0266823845495,
+      "llf": 2877.350553003261,
+      "converged": true,
+      "n_params": 7,
+      "lb_p_24": 0.0,
+      "lb_p_48": 0.0
+    },
+    {
+      "order": [
+        1,
+        0,
+        0
+      ],
+      "seasonal": [
+        1,
+        0,
+        1
+      ],
+      "exog": "fourier_K2",
+      "exog_spec": {
+        "kind": "fourier",
+        "K": 2
+      },
+      "tempo_s": 70.65674469999976,
+      "ok": true,
+      "erro": null,
+      "aic": -5871.586051819159,
+      "bic": -5820.529567679761,
+      "llf": 2943.7930259095797,
+      "converged": true,
+      "n_params": 8,
+      "lb_p_24": 0.0,
+      "lb_p_48": 0.0
+    },
+    {
+      "order": [
+        1,
+        0,
+        1
+      ],
+      "seasonal": [
+        0,
+        0,
+        1
+      ],
+      "exog": "fourier_K2",
+      "exog_spec": {
+        "kind": "fourier",
+        "K": 2
+      },
+      "tempo_s": 53.71137959999942,
+      "ok": true,
+      "erro": null,
+      "aic": -7090.470113790702,
+      "bic": -7039.413629651304,
+      "llf": 3553.235056895351,
+      "converged": true,
+      "n_params": 8,
+      "lb_p_24": 4.414102394104876e-70,
+      "lb_p_48": 1.7567655578218418e-80
+    },
+    {
+      "order": [
+        1,
+        0,
+        1
+      ],
+      "seasonal": [
+        1,
+        0,
+        1
+      ],
+      "exog": "fourier_K2",
+      "exog_spec": {
+        "kind": "fourier",
+        "K": 2
+      },
+      "tempo_s": 91.0693695000009,
+      "ok": true,
+      "erro": null,
+      "aic": -7176.6405324217885,
+      "bic": -7119.201987764965,
+      "llf": 3597.3202662108943,
+      "converged": true,
+      "n_params": 9,
+      "lb_p_24": 1.5740067880309368e-43,
+      "lb_p_48": 8.034465300858315e-52
+    },
+    {
+      "order": [
+        2,
+        0,
+        0
+      ],
+      "seasonal": [
+        0,
+        0,
+        1
+      ],
+      "exog": "fourier_K2",
+      "exog_spec": {
+        "kind": "fourier",
+        "K": 2
+      },
+      "tempo_s": 58.971076699999685,
+      "ok": true,
+      "erro": null,
+      "aic": -7144.475466796823,
+      "bic": -7093.418982657425,
+      "llf": 3580.2377333984114,
+      "converged": true,
+      "n_params": 8,
+      "lb_p_24": 2.6381745908689854e-37,
+      "lb_p_48": 1.0931593272642547e-36
+    },
+    {
+      "order": [
+        2,
+        0,
+        0
+      ],
+      "seasonal": [
+        1,
+        0,
+        1
+      ],
+      "exog": "fourier_K2",
+      "exog_spec": {
+        "kind": "fourier",
+        "K": 2
+      },
+      "tempo_s": 96.39836560000003,
+      "ok": true,
+      "erro": null,
+      "aic": -7219.5931133491995,
+      "bic": -7162.154568692376,
+      "llf": 3618.7965566745997,
+      "converged": true,
+      "n_params": 9,
+      "lb_p_24": 3.500844750517589e-24,
+      "lb_p_48": 5.97318007211732e-24
+    },
+    {
+      "order": [
+        2,
+        0,
+        1
+      ],
+      "seasonal": [
+        0,
+        0,
+        1
+      ],
+      "exog": "fourier_K2",
+      "exog_spec": {
+        "kind": "fourier",
+        "K": 2
+      },
+      "tempo_s": 62.820143400000234,
+      "ok": true,
+      "erro": null,
+      "aic": -7227.9428629570675,
+      "bic": -7170.504318300244,
+      "llf": 3622.9714314785338,
+      "converged": true,
+      "n_params": 9,
+      "lb_p_24": 3.8519216867120795e-21,
+      "lb_p_48": 3.005507369071579e-23
+    },
+    {
+      "order": [
+        2,
+        0,
+        1
+      ],
+      "seasonal": [
+        1,
+        0,
+        1
+      ],
+      "exog": "fourier_K2",
+      "exog_spec": {
+        "kind": "fourier",
+        "K": 2
+      },
+      "tempo_s": 68.84696790000089,
+      "ok": true,
+      "erro": null,
+      "aic": -7298.960766034863,
+      "bic": -7235.140160860616,
+      "llf": 3659.4803830174314,
+      "converged": true,
+      "n_params": 10,
+      "lb_p_24": 1.8398881602309062e-09,
+      "lb_p_48": 2.152008843399246e-12
+    }
+  ],
+  "candidatos_exog": [
+    {
+      "order": [
+        2,
+        0,
+        1
+      ],
+      "seasonal": [
+        1,
+        0,
+        1
+      ],
+      "exog": "fourier_K2",
+      "exog_spec": {
+        "kind": "fourier",
+        "K": 2
+      },
+      "tempo_s": 68.84696790000089,
+      "ok": true,
+      "erro": null,
+      "aic": -7298.960766034863,
+      "bic": -7235.140160860616,
+      "llf": 3659.4803830174314,
+      "converged": true,
+      "n_params": 10,
+      "lb_p_24": 1.8398881602309062e-09,
+      "lb_p_48": 2.152008843399246e-12
+    },
+    {
+      "order": [
+        2,
+        0,
+        1
+      ],
+      "seasonal": [
+        1,
+        0,
+        1
+      ],
+      "exog": "fourier_K3",
+      "exog_spec": {
+        "kind": "fourier",
+        "K": 3
+      },
+      "tempo_s": 109.55775630000062,
+      "ok": true,
+      "erro": null,
+      "aic": -7317.41128006252,
+      "bic": -7240.826553853423,
+      "llf": 3670.70564003126,
+      "converged": true,
+      "n_params": 12,
+      "lb_p_24": 4.3395320829104945e-11,
+      "lb_p_48": 3.488788094352256e-14
+    },
+    {
+      "order": [
+        2,
+        0,
+        1
+      ],
+      "seasonal": [
+        1,
+        0,
+        1
+      ],
+      "exog": "dow",
+      "exog_spec": {
+        "kind": "dow"
+      },
+      "tempo_s": 216.76598419999937,
+      "ok": true,
+      "erro": null,
+      "aic": -7267.592043563089,
+      "bic": -7191.007317353992,
+      "llf": 3645.7960217815444,
+      "converged": true,
+      "n_params": 12,
+      "lb_p_24": 3.5197118603456528e-09,
+      "lb_p_48": 4.3621180369757404e-12
+    }
+  ],
+  "escolhido": {
+    "order": [
+      2,
+      0,
+      1
+    ],
+    "seasonal": [
+      1,
+      0,
+      1
+    ],
+    "exog": {
+      "kind": "fourier",
+      "K": 3
+    }
+  },
+  "custo_tuning_s": 890.3102293000011
+}

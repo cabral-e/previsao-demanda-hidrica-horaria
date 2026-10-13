@@ -1,0 +1,6 @@
+2026-10-05 16:29:37 | INFO     | sarima | Seleção já realizada com mesma entrada e configuração; reutilizando.
+2026-10-05 16:55:24 | INFO     | sarima | sarima h=1 [exp_20261005_1655_sarima_h01_v001]: MAE teste 0.0795 | RMSE teste 0.1162 | t_treino 377.719s | t_prev 0.421s | mem 25.3 MB
+2026-10-05 16:55:25 | INFO     | sarima | sarima h=6 [exp_20261005_1655_sarima_h06_v001]: MAE teste 0.2780 | RMSE teste 0.3747 | t_treino 377.719s | t_prev 0.452s | mem 25.3 MB
+2026-10-05 16:55:25 | INFO     | sarima | sarima h=12 [exp_20261005_1655_sarima_h12_v001]: MAE teste 0.2997 | RMSE teste 0.4038 | t_treino 377.719s | t_prev 0.417s | mem 25.3 MB
+2026-10-05 16:55:26 | INFO     | sarima | sarima h=24 [exp_20261005_1655_sarima_h24_v001]: MAE teste 0.2949 | RMSE teste 0.4002 | t_treino 377.719s | t_prev 0.411s | mem 25.3 MB
+2026-10-05 16:55:26 | INFO     | sarima | Relatório: <PROJETO>\results\reports\08_sarima.md

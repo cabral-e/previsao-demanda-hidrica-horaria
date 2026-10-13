@@ -1,0 +1,5 @@
+2026-10-05 17:01:25 | INFO     | svr | h=1 n=2000: RMSE val 0.1689 | fit 0.4s | pred 0.46s | SV 727
+2026-10-05 17:01:28 | INFO     | svr | h=1 n=4000: RMSE val 0.1394 | fit 1.1s | pred 0.93s | SV 1392
+2026-10-05 17:01:37 | INFO     | svr | h=1 n=11045: RMSE val 0.1177 | fit 6.9s | pred 2.32s | SV 3495
+2026-10-05 17:01:53 | INFO     | svr | h=6 n=11040: RMSE val 0.3175 | fit 12.1s | pred 4.51s | SV 7912
+2026-10-05 17:02:09 | INFO     | svr | h=24 n=11022: RMSE val 0.4597 | fit 11.0s | pred 4.59s | SV 8461

@@ -1,0 +1,13 @@
+2026-10-05 16:04:52 | INFO     | baseline | persistencia h=1: reutilizando exp_20261005_1603_persistencia_h01_v001
+2026-10-05 16:04:52 | INFO     | baseline | persistencia h=6: reutilizando exp_20261005_1603_persistencia_h06_v001
+2026-10-05 16:04:52 | INFO     | baseline | persistencia h=12: reutilizando exp_20261005_1603_persistencia_h12_v001
+2026-10-05 16:04:52 | INFO     | baseline | persistencia h=24: reutilizando exp_20261005_1603_persistencia_h24_v001
+2026-10-05 16:04:52 | INFO     | baseline | sazonal_diaria h=1: reutilizando exp_20261005_1603_sazonal_diaria_h01_v001
+2026-10-05 16:04:52 | INFO     | baseline | sazonal_diaria h=6: reutilizando exp_20261005_1603_sazonal_diaria_h06_v001
+2026-10-05 16:04:52 | INFO     | baseline | sazonal_diaria h=12: reutilizando exp_20261005_1603_sazonal_diaria_h12_v001
+2026-10-05 16:04:52 | INFO     | baseline | sazonal_diaria h=24: reutilizando exp_20261005_1603_sazonal_diaria_h24_v001
+2026-10-05 16:04:52 | INFO     | baseline | sazonal_semanal h=1: reutilizando exp_20261005_1603_sazonal_semanal_h01_v001
+2026-10-05 16:04:52 | INFO     | baseline | sazonal_semanal h=6: reutilizando exp_20261005_1603_sazonal_semanal_h06_v001
+2026-10-05 16:04:52 | INFO     | baseline | sazonal_semanal h=12: reutilizando exp_20261005_1603_sazonal_semanal_h12_v001
+2026-10-05 16:04:52 | INFO     | baseline | sazonal_semanal h=24: reutilizando exp_20261005_1604_sazonal_semanal_h24_v001
+2026-10-05 16:04:52 | INFO     | baseline | Relatório: <PROJETO>\results\reports\07_baseline.md

@@ -1,0 +1,145 @@
+horizonte_h,modelo,papel,conjunto,erro,variante,t,erro_valor,pareto,dominado_por
+1,lightgbm,modelo,treinaveis,rmse_teste,sem_tuning,2.8505835000032675,0.0802805443976461,True,
+1,lightgbm_rec,modelo,treinaveis,rmse_teste,sem_tuning,2.755236299995886,0.0802805443976461,True,
+1,sarima,modelo,treinaveis,rmse_teste,sem_tuning,369.174295599998,0.1161513709633932,False,"LightGBM (direto), LightGBM (recursivo), SVR"
+1,svr,modelo,treinaveis,rmse_teste,sem_tuning,33.11384570000155,0.0916193813195497,False,"LightGBM (direto), LightGBM (recursivo)"
+1,lightgbm,modelo,treinaveis,rmse_teste,com_tuning,77.53538540000409,0.0802805443976461,True,
+1,lightgbm_rec,modelo,treinaveis,rmse_teste,com_tuning,77.4400381999967,0.0802805443976461,True,
+1,sarima,modelo,treinaveis,rmse_teste,com_tuning,1259.484524899999,0.1161513709633932,False,"LightGBM (direto), LightGBM (recursivo), SVR"
+1,svr,modelo,treinaveis,rmse_teste,com_tuning,1127.9871724000022,0.0916193813195497,False,"LightGBM (direto), LightGBM (recursivo)"
+1,lightgbm,modelo,treinaveis,mae_teste,sem_tuning,2.8505835000032675,0.052242055963187,True,
+1,lightgbm_rec,modelo,treinaveis,mae_teste,sem_tuning,2.755236299995886,0.052242055963187,True,
+1,sarima,modelo,treinaveis,mae_teste,sem_tuning,369.174295599998,0.0795191518562652,False,"LightGBM (direto), LightGBM (recursivo), SVR"
+1,svr,modelo,treinaveis,mae_teste,sem_tuning,33.11384570000155,0.0588921674305204,False,"LightGBM (direto), LightGBM (recursivo)"
+1,lightgbm,modelo,treinaveis,mae_teste,com_tuning,77.53538540000409,0.052242055963187,True,
+1,lightgbm_rec,modelo,treinaveis,mae_teste,com_tuning,77.4400381999967,0.052242055963187,True,
+1,sarima,modelo,treinaveis,mae_teste,com_tuning,1259.484524899999,0.0795191518562652,False,"LightGBM (direto), LightGBM (recursivo), SVR"
+1,svr,modelo,treinaveis,mae_teste,com_tuning,1127.9871724000022,0.0588921674305204,False,"LightGBM (direto), LightGBM (recursivo)"
+1,lightgbm,modelo,com_baseline,rmse_teste,sem_tuning,2.8505835000032675,0.0802805443976461,True,
+1,lightgbm_rec,modelo,com_baseline,rmse_teste,sem_tuning,2.755236299995886,0.0802805443976461,True,
+1,persistencia,baseline,com_baseline,rmse_teste,sem_tuning,0.0013079999989713,0.196768193145879,True,
+1,sarima,modelo,com_baseline,rmse_teste,sem_tuning,369.174295599998,0.1161513709633932,False,"LightGBM (direto), LightGBM (recursivo), SVR"
+1,svr,modelo,com_baseline,rmse_teste,sem_tuning,33.11384570000155,0.0916193813195497,False,"LightGBM (direto), LightGBM (recursivo)"
+1,lightgbm,modelo,com_baseline,rmse_teste,com_tuning,77.53538540000409,0.0802805443976461,True,
+1,lightgbm_rec,modelo,com_baseline,rmse_teste,com_tuning,77.4400381999967,0.0802805443976461,True,
+1,persistencia,baseline,com_baseline,rmse_teste,com_tuning,0.0013079999989713,0.196768193145879,True,
+1,sarima,modelo,com_baseline,rmse_teste,com_tuning,1259.484524899999,0.1161513709633932,False,"LightGBM (direto), LightGBM (recursivo), SVR"
+1,svr,modelo,com_baseline,rmse_teste,com_tuning,1127.9871724000022,0.0916193813195497,False,"LightGBM (direto), LightGBM (recursivo)"
+1,lightgbm,modelo,com_baseline,mae_teste,sem_tuning,2.8505835000032675,0.052242055963187,True,
+1,lightgbm_rec,modelo,com_baseline,mae_teste,sem_tuning,2.755236299995886,0.052242055963187,True,
+1,persistencia,baseline,com_baseline,mae_teste,sem_tuning,0.0013079999989713,0.1487097944298835,True,
+1,sarima,modelo,com_baseline,mae_teste,sem_tuning,369.174295599998,0.0795191518562652,False,"LightGBM (direto), LightGBM (recursivo), SVR"
+1,svr,modelo,com_baseline,mae_teste,sem_tuning,33.11384570000155,0.0588921674305204,False,"LightGBM (direto), LightGBM (recursivo)"
+1,lightgbm,modelo,com_baseline,mae_teste,com_tuning,77.53538540000409,0.052242055963187,True,
+1,lightgbm_rec,modelo,com_baseline,mae_teste,com_tuning,77.4400381999967,0.052242055963187,True,
+1,persistencia,baseline,com_baseline,mae_teste,com_tuning,0.0013079999989713,0.1487097944298835,True,
+1,sarima,modelo,com_baseline,mae_teste,com_tuning,1259.484524899999,0.0795191518562652,False,"LightGBM (direto), LightGBM (recursivo), SVR"
+1,svr,modelo,com_baseline,mae_teste,com_tuning,1127.9871724000022,0.0588921674305204,False,"LightGBM (direto), LightGBM (recursivo)"
+6,lightgbm,modelo,treinaveis,rmse_teste,sem_tuning,0.870108999999502,0.2795000059989583,True,
+6,lightgbm_rec,modelo,treinaveis,rmse_teste,sem_tuning,4.780756099997234,0.2723967612586239,True,
+6,sarima,modelo,treinaveis,rmse_teste,sem_tuning,369.1997755999983,0.3747063192019045,False,"LightGBM (direto), LightGBM (recursivo), SVR"
+6,svr,modelo,treinaveis,rmse_teste,sem_tuning,23.54720860000089,0.2989880062239498,False,"LightGBM (direto), LightGBM (recursivo)"
+6,lightgbm,modelo,treinaveis,rmse_teste,com_tuning,75.55491090000032,0.2795000059989583,True,
+6,lightgbm_rec,modelo,treinaveis,rmse_teste,com_tuning,79.46555799999805,0.2723967612586239,True,
+6,sarima,modelo,treinaveis,rmse_teste,com_tuning,1259.5100048999993,0.3747063192019045,False,"LightGBM (direto), LightGBM (recursivo), SVR"
+6,svr,modelo,treinaveis,rmse_teste,com_tuning,1118.4205353000016,0.2989880062239498,False,"LightGBM (direto), LightGBM (recursivo)"
+6,lightgbm,modelo,treinaveis,mae_teste,sem_tuning,0.870108999999502,0.1952806219873109,True,
+6,lightgbm_rec,modelo,treinaveis,mae_teste,sem_tuning,4.780756099997234,0.1837950845765928,True,
+6,sarima,modelo,treinaveis,mae_teste,sem_tuning,369.1997755999983,0.2779877616126264,False,"LightGBM (direto), LightGBM (recursivo), SVR"
+6,svr,modelo,treinaveis,mae_teste,sem_tuning,23.54720860000089,0.2070989201016776,False,"LightGBM (direto), LightGBM (recursivo)"
+6,lightgbm,modelo,treinaveis,mae_teste,com_tuning,75.55491090000032,0.1952806219873109,True,
+6,lightgbm_rec,modelo,treinaveis,mae_teste,com_tuning,79.46555799999805,0.1837950845765928,True,
+6,sarima,modelo,treinaveis,mae_teste,com_tuning,1259.5100048999993,0.2779877616126264,False,"LightGBM (direto), LightGBM (recursivo), SVR"
+6,svr,modelo,treinaveis,mae_teste,com_tuning,1118.4205353000016,0.2070989201016776,False,"LightGBM (direto), LightGBM (recursivo)"
+6,lightgbm,modelo,com_baseline,rmse_teste,sem_tuning,0.870108999999502,0.2795000059989583,True,
+6,lightgbm_rec,modelo,com_baseline,rmse_teste,sem_tuning,4.780756099997234,0.2723967612586239,True,
+6,sarima,modelo,com_baseline,rmse_teste,sem_tuning,369.1997755999983,0.3747063192019045,False,"LightGBM (direto), LightGBM (recursivo), SVR"
+6,sazonal_semanal,baseline,com_baseline,rmse_teste,sem_tuning,0.0013063000005786,0.5204531323399934,True,
+6,svr,modelo,com_baseline,rmse_teste,sem_tuning,23.54720860000089,0.2989880062239498,False,"LightGBM (direto), LightGBM (recursivo)"
+6,lightgbm,modelo,com_baseline,rmse_teste,com_tuning,75.55491090000032,0.2795000059989583,True,
+6,lightgbm_rec,modelo,com_baseline,rmse_teste,com_tuning,79.46555799999805,0.2723967612586239,True,
+6,sarima,modelo,com_baseline,rmse_teste,com_tuning,1259.5100048999993,0.3747063192019045,False,"LightGBM (direto), LightGBM (recursivo), SVR"
+6,sazonal_semanal,baseline,com_baseline,rmse_teste,com_tuning,0.0013063000005786,0.5204531323399934,True,
+6,svr,modelo,com_baseline,rmse_teste,com_tuning,1118.4205353000016,0.2989880062239498,False,"LightGBM (direto), LightGBM (recursivo)"
+6,lightgbm,modelo,com_baseline,mae_teste,sem_tuning,0.870108999999502,0.1952806219873109,True,
+6,lightgbm_rec,modelo,com_baseline,mae_teste,sem_tuning,4.780756099997234,0.1837950845765928,True,
+6,sarima,modelo,com_baseline,mae_teste,sem_tuning,369.1997755999983,0.2779877616126264,False,"LightGBM (direto), LightGBM (recursivo), SVR"
+6,sazonal_semanal,baseline,com_baseline,mae_teste,sem_tuning,0.0013063000005786,0.3708444797353113,True,
+6,svr,modelo,com_baseline,mae_teste,sem_tuning,23.54720860000089,0.2070989201016776,False,"LightGBM (direto), LightGBM (recursivo)"
+6,lightgbm,modelo,com_baseline,mae_teste,com_tuning,75.55491090000032,0.1952806219873109,True,
+6,lightgbm_rec,modelo,com_baseline,mae_teste,com_tuning,79.46555799999805,0.1837950845765928,True,
+6,sarima,modelo,com_baseline,mae_teste,com_tuning,1259.5100048999993,0.2779877616126264,False,"LightGBM (direto), LightGBM (recursivo), SVR"
+6,sazonal_semanal,baseline,com_baseline,mae_teste,com_tuning,0.0013063000005786,0.3708444797353113,True,
+6,svr,modelo,com_baseline,mae_teste,com_tuning,1118.4205353000016,0.2070989201016776,False,"LightGBM (direto), LightGBM (recursivo)"
+12,lightgbm,modelo,treinaveis,rmse_teste,sem_tuning,0.7825907000005827,0.3619519332199699,True,
+12,lightgbm_rec,modelo,treinaveis,rmse_teste,sem_tuning,7.339863899996999,0.3523897322534857,True,
+12,sarima,modelo,treinaveis,rmse_teste,sem_tuning,369.1454923999991,0.4037951296386479,False,"LightGBM (direto), LightGBM (recursivo), SVR"
+12,svr,modelo,treinaveis,rmse_teste,sem_tuning,18.489911600001506,0.3650450052328605,False,"LightGBM (direto), LightGBM (recursivo)"
+12,lightgbm,modelo,treinaveis,rmse_teste,com_tuning,75.4673926000014,0.3619519332199699,True,
+12,lightgbm_rec,modelo,treinaveis,rmse_teste,com_tuning,82.02466579999782,0.3523897322534857,True,
+12,sarima,modelo,treinaveis,rmse_teste,com_tuning,1259.4557217000001,0.4037951296386479,False,"LightGBM (direto), LightGBM (recursivo), SVR"
+12,svr,modelo,treinaveis,rmse_teste,com_tuning,1113.3632383000022,0.3650450052328605,False,"LightGBM (direto), LightGBM (recursivo)"
+12,lightgbm,modelo,treinaveis,mae_teste,sem_tuning,0.7825907000005827,0.2545422329158788,True,
+12,lightgbm_rec,modelo,treinaveis,mae_teste,sem_tuning,7.339863899996999,0.2383794031452831,True,
+12,sarima,modelo,treinaveis,mae_teste,sem_tuning,369.1454923999991,0.2996646857663475,False,"LightGBM (direto), LightGBM (recursivo), SVR"
+12,svr,modelo,treinaveis,mae_teste,sem_tuning,18.489911600001506,0.250859689925909,False,LightGBM (recursivo)
+12,lightgbm,modelo,treinaveis,mae_teste,com_tuning,75.4673926000014,0.2545422329158788,True,
+12,lightgbm_rec,modelo,treinaveis,mae_teste,com_tuning,82.02466579999782,0.2383794031452831,True,
+12,sarima,modelo,treinaveis,mae_teste,com_tuning,1259.4557217000001,0.2996646857663475,False,"LightGBM (direto), LightGBM (recursivo), SVR"
+12,svr,modelo,treinaveis,mae_teste,com_tuning,1113.3632383000022,0.250859689925909,False,LightGBM (recursivo)
+12,lightgbm,modelo,com_baseline,rmse_teste,sem_tuning,0.7825907000005827,0.3619519332199699,True,
+12,lightgbm_rec,modelo,com_baseline,rmse_teste,sem_tuning,7.339863899996999,0.3523897322534857,True,
+12,sarima,modelo,com_baseline,rmse_teste,sem_tuning,369.1454923999991,0.4037951296386479,False,"LightGBM (direto), LightGBM (recursivo), SVR"
+12,sazonal_semanal,baseline,com_baseline,rmse_teste,sem_tuning,0.0012235999965923,0.5204531323399934,True,
+12,svr,modelo,com_baseline,rmse_teste,sem_tuning,18.489911600001506,0.3650450052328605,False,"LightGBM (direto), LightGBM (recursivo)"
+12,lightgbm,modelo,com_baseline,rmse_teste,com_tuning,75.4673926000014,0.3619519332199699,True,
+12,lightgbm_rec,modelo,com_baseline,rmse_teste,com_tuning,82.02466579999782,0.3523897322534857,True,
+12,sarima,modelo,com_baseline,rmse_teste,com_tuning,1259.4557217000001,0.4037951296386479,False,"LightGBM (direto), LightGBM (recursivo), SVR"
+12,sazonal_semanal,baseline,com_baseline,rmse_teste,com_tuning,0.0012235999965923,0.5204531323399934,True,
+12,svr,modelo,com_baseline,rmse_teste,com_tuning,1113.3632383000022,0.3650450052328605,False,"LightGBM (direto), LightGBM (recursivo)"
+12,lightgbm,modelo,com_baseline,mae_teste,sem_tuning,0.7825907000005827,0.2545422329158788,True,
+12,lightgbm_rec,modelo,com_baseline,mae_teste,sem_tuning,7.339863899996999,0.2383794031452831,True,
+12,sarima,modelo,com_baseline,mae_teste,sem_tuning,369.1454923999991,0.2996646857663475,False,"LightGBM (direto), LightGBM (recursivo), SVR"
+12,sazonal_semanal,baseline,com_baseline,mae_teste,sem_tuning,0.0012235999965923,0.3708444797353113,True,
+12,svr,modelo,com_baseline,mae_teste,sem_tuning,18.489911600001506,0.250859689925909,False,LightGBM (recursivo)
+12,lightgbm,modelo,com_baseline,mae_teste,com_tuning,75.4673926000014,0.2545422329158788,True,
+12,lightgbm_rec,modelo,com_baseline,mae_teste,com_tuning,82.02466579999782,0.2383794031452831,True,
+12,sarima,modelo,com_baseline,mae_teste,com_tuning,1259.4557217000001,0.2996646857663475,False,"LightGBM (direto), LightGBM (recursivo), SVR"
+12,sazonal_semanal,baseline,com_baseline,mae_teste,com_tuning,0.0012235999965923,0.3708444797353113,True,
+12,svr,modelo,com_baseline,mae_teste,com_tuning,1113.3632383000022,0.250859689925909,False,LightGBM (recursivo)
+24,lightgbm,modelo,treinaveis,rmse_teste,sem_tuning,0.4947814999977709,0.3898639709573245,True,
+24,lightgbm_rec,modelo,treinaveis,rmse_teste,sem_tuning,11.908077600004615,0.394717157902163,False,LightGBM (direto)
+24,sarima,modelo,treinaveis,rmse_teste,sem_tuning,369.1765491999977,0.4002258430449595,False,"LightGBM (direto), LightGBM (recursivo), SVR"
+24,svr,modelo,treinaveis,rmse_teste,sem_tuning,23.7125866000024,0.3968286684450497,False,"LightGBM (direto), LightGBM (recursivo)"
+24,lightgbm,modelo,treinaveis,rmse_teste,com_tuning,75.17958339999859,0.3898639709573245,True,
+24,lightgbm_rec,modelo,treinaveis,rmse_teste,com_tuning,86.59287950000544,0.394717157902163,False,LightGBM (direto)
+24,sarima,modelo,treinaveis,rmse_teste,com_tuning,1259.4867784999988,0.4002258430449595,False,"LightGBM (direto), LightGBM (recursivo), SVR"
+24,svr,modelo,treinaveis,rmse_teste,com_tuning,1118.585913300003,0.3968286684450497,False,"LightGBM (direto), LightGBM (recursivo)"
+24,lightgbm,modelo,treinaveis,mae_teste,sem_tuning,0.4947814999977709,0.2786045390742895,True,
+24,lightgbm_rec,modelo,treinaveis,mae_teste,sem_tuning,11.908077600004615,0.2762616190381556,True,
+24,sarima,modelo,treinaveis,mae_teste,sem_tuning,369.1765491999977,0.2949146403582625,False,"LightGBM (direto), LightGBM (recursivo), SVR"
+24,svr,modelo,treinaveis,mae_teste,sem_tuning,23.7125866000024,0.2768666436914145,False,LightGBM (recursivo)
+24,lightgbm,modelo,treinaveis,mae_teste,com_tuning,75.17958339999859,0.2786045390742895,True,
+24,lightgbm_rec,modelo,treinaveis,mae_teste,com_tuning,86.59287950000544,0.2762616190381556,True,
+24,sarima,modelo,treinaveis,mae_teste,com_tuning,1259.4867784999988,0.2949146403582625,False,"LightGBM (direto), LightGBM (recursivo), SVR"
+24,svr,modelo,treinaveis,mae_teste,com_tuning,1118.585913300003,0.2768666436914145,False,LightGBM (recursivo)
+24,lightgbm,modelo,com_baseline,rmse_teste,sem_tuning,0.4947814999977709,0.3898639709573245,True,
+24,lightgbm_rec,modelo,com_baseline,rmse_teste,sem_tuning,11.908077600004615,0.394717157902163,False,LightGBM (direto)
+24,sarima,modelo,com_baseline,rmse_teste,sem_tuning,369.1765491999977,0.4002258430449595,False,"LightGBM (direto), LightGBM (recursivo), SVR"
+24,sazonal_semanal,baseline,com_baseline,rmse_teste,sem_tuning,0.0012310999991314,0.5204531323399934,True,
+24,svr,modelo,com_baseline,rmse_teste,sem_tuning,23.7125866000024,0.3968286684450497,False,"LightGBM (direto), LightGBM (recursivo)"
+24,lightgbm,modelo,com_baseline,rmse_teste,com_tuning,75.17958339999859,0.3898639709573245,True,
+24,lightgbm_rec,modelo,com_baseline,rmse_teste,com_tuning,86.59287950000544,0.394717157902163,False,LightGBM (direto)
+24,sarima,modelo,com_baseline,rmse_teste,com_tuning,1259.4867784999988,0.4002258430449595,False,"LightGBM (direto), LightGBM (recursivo), SVR"
+24,sazonal_semanal,baseline,com_baseline,rmse_teste,com_tuning,0.0012310999991314,0.5204531323399934,True,
+24,svr,modelo,com_baseline,rmse_teste,com_tuning,1118.585913300003,0.3968286684450497,False,"LightGBM (direto), LightGBM (recursivo)"
+24,lightgbm,modelo,com_baseline,mae_teste,sem_tuning,0.4947814999977709,0.2786045390742895,True,
+24,lightgbm_rec,modelo,com_baseline,mae_teste,sem_tuning,11.908077600004615,0.2762616190381556,True,
+24,sarima,modelo,com_baseline,mae_teste,sem_tuning,369.1765491999977,0.2949146403582625,False,"LightGBM (direto), LightGBM (recursivo), SVR"
+24,sazonal_semanal,baseline,com_baseline,mae_teste,sem_tuning,0.0012310999991314,0.3708444797353113,True,
+24,svr,modelo,com_baseline,mae_teste,sem_tuning,23.7125866000024,0.2768666436914145,False,LightGBM (recursivo)
+24,lightgbm,modelo,com_baseline,mae_teste,com_tuning,75.17958339999859,0.2786045390742895,True,
+24,lightgbm_rec,modelo,com_baseline,mae_teste,com_tuning,86.59287950000544,0.2762616190381556,True,
+24,sarima,modelo,com_baseline,mae_teste,com_tuning,1259.4867784999988,0.2949146403582625,False,"LightGBM (direto), LightGBM (recursivo), SVR"
+24,sazonal_semanal,baseline,com_baseline,mae_teste,com_tuning,0.0012310999991314,0.3708444797353113,True,
+24,svr,modelo,com_baseline,mae_teste,com_tuning,1118.585913300003,0.2768666436914145,False,LightGBM (recursivo)

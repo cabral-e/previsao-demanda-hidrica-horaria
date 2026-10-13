@@ -1,0 +1,5 @@
+2026-10-05 18:05:08 | INFO     | metrics_report | h=1 grupo dos melhores: ['lightgbm_rec', 'lightgbm']
+2026-10-05 18:05:08 | INFO     | metrics_report | h=6 grupo dos melhores: ['lightgbm_rec', 'lightgbm']
+2026-10-05 18:05:08 | INFO     | metrics_report | h=12 grupo dos melhores: ['lightgbm_rec', 'svr', 'lightgbm']
+2026-10-05 18:05:08 | INFO     | metrics_report | h=24 grupo dos melhores: ['lightgbm', 'sarima', 'svr', 'lightgbm_rec']
+2026-10-05 18:05:08 | INFO     | metrics_report | Relatório: <PROJETO>\results\reports\12_metricas.md

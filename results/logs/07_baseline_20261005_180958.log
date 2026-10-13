@@ -1,0 +1,13 @@
+2026-10-05 18:09:59 | INFO     | baseline | persistencia h=1 [exp_20261005_1809_persistencia_h01_v002]: MAE teste 0.1487 | RMSE teste 0.1968 | t_treino 0.000s | t_prev 0.001s | mem 0.0 MB
+2026-10-05 18:10:00 | INFO     | baseline | persistencia h=6 [exp_20261005_1810_persistencia_h06_v002]: MAE teste 0.5971 | RMSE teste 0.7682 | t_treino 0.000s | t_prev 0.001s | mem 0.0 MB
+2026-10-05 18:10:00 | INFO     | baseline | persistencia h=12 [exp_20261005_1810_persistencia_h12_v002]: MAE teste 0.7448 | RMSE teste 0.9221 | t_treino 0.000s | t_prev 0.001s | mem 0.0 MB
+2026-10-05 18:10:01 | INFO     | baseline | persistencia h=24 [exp_20261005_1810_persistencia_h24_v002]: MAE teste 0.3954 | RMSE teste 0.5665 | t_treino 0.000s | t_prev 0.001s | mem 0.0 MB
+2026-10-05 18:10:01 | INFO     | baseline | sazonal_diaria h=1 [exp_20261005_1810_sazonal_diaria_h01_v002]: MAE teste 0.3954 | RMSE teste 0.5665 | t_treino 0.000s | t_prev 0.001s | mem 0.0 MB
+2026-10-05 18:10:02 | INFO     | baseline | sazonal_diaria h=6 [exp_20261005_1810_sazonal_diaria_h06_v002]: MAE teste 0.3954 | RMSE teste 0.5665 | t_treino 0.000s | t_prev 0.001s | mem 0.0 MB
+2026-10-05 18:10:03 | INFO     | baseline | sazonal_diaria h=12 [exp_20261005_1810_sazonal_diaria_h12_v002]: MAE teste 0.3954 | RMSE teste 0.5665 | t_treino 0.000s | t_prev 0.001s | mem 0.0 MB
+2026-10-05 18:10:03 | INFO     | baseline | sazonal_diaria h=24 [exp_20261005_1810_sazonal_diaria_h24_v002]: MAE teste 0.3954 | RMSE teste 0.5665 | t_treino 0.000s | t_prev 0.001s | mem 0.0 MB
+2026-10-05 18:10:04 | INFO     | baseline | sazonal_semanal h=1 [exp_20261005_1810_sazonal_semanal_h01_v002]: MAE teste 0.3708 | RMSE teste 0.5205 | t_treino 0.000s | t_prev 0.001s | mem 0.0 MB
+2026-10-05 18:10:04 | INFO     | baseline | sazonal_semanal h=6 [exp_20261005_1810_sazonal_semanal_h06_v002]: MAE teste 0.3708 | RMSE teste 0.5205 | t_treino 0.000s | t_prev 0.001s | mem 0.0 MB
+2026-10-05 18:10:05 | INFO     | baseline | sazonal_semanal h=12 [exp_20261005_1810_sazonal_semanal_h12_v002]: MAE teste 0.3708 | RMSE teste 0.5205 | t_treino 0.000s | t_prev 0.001s | mem 0.0 MB
+2026-10-05 18:10:06 | INFO     | baseline | sazonal_semanal h=24 [exp_20261005_1810_sazonal_semanal_h24_v002]: MAE teste 0.3708 | RMSE teste 0.5205 | t_treino 0.000s | t_prev 0.001s | mem 0.0 MB
+2026-10-05 18:10:06 | INFO     | baseline | Relatório: <PROJETO>\results\reports\07_baseline.md

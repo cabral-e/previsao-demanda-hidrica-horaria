@@ -1,0 +1,2 @@
+2026-10-05 15:54:05 | INFO     | split | Corte 2019-08-08 00:00:00: treino 14016 (2018-01-01 00:00:00 a 2019-08-07 23:00:00), teste 3504 (2019-08-08 00:00:00 a 2019-12-31 23:00:00)
+2026-10-05 15:54:05 | INFO     | split | Validações: {'tamanhos_somam': True, 'sem_sobreposicao': True, 'treino_antes_do_corte': True, 'teste_a_partir_do_corte': True, 'teste_comeca_no_corte': True, 'contiguos': True, 'ordem_preservada': True, 'nao_vazios': True}

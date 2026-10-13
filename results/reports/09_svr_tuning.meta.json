@@ -1,0 +1,8 @@
+{
+  "artifact": "09_svr_tuning.json",
+  "created_at": "2026-10-05T17:21:39",
+  "etapa": "09",
+  "input": "05_treino.parquet",
+  "input_sha256": "8ae58a8caddd2341d94baa9784e6e984f23d9edfbe7a7fe5453d26c52278d3c1",
+  "config_hash": "5b79ffde0ca18bfd"
+}

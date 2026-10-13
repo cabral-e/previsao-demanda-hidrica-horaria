@@ -1,0 +1,10 @@
+2026-10-05 15:58:30 | INFO     | lag_evaluation | Validação interna: ajuste < 2019-04-13 05:00:00 <= validação (somente treino, até 2019-08-07 23:00:00)
+2026-10-05 15:58:30 | INFO     | lag_evaluation | ridge h=1: RMSE base 0.1234 | +23,25 0.1158 | ganho +6.14%
+2026-10-05 15:58:30 | INFO     | lag_evaluation | ridge h=6: RMSE base 0.4062 | +23,25 0.4063 | ganho -0.02%
+2026-10-05 15:58:30 | INFO     | lag_evaluation | ridge h=12: RMSE base 0.4534 | +23,25 0.4535 | ganho -0.02%
+2026-10-05 15:58:30 | INFO     | lag_evaluation | ridge h=24: RMSE base 0.4863 | +23,25 0.4852 | ganho +0.23%
+2026-10-05 15:58:32 | INFO     | lag_evaluation | lightgbm h=1: RMSE base 0.0964 | +23,25 0.0972 | ganho -0.88%
+2026-10-05 15:58:33 | INFO     | lag_evaluation | lightgbm h=6: RMSE base 0.3079 | +23,25 0.3118 | ganho -1.27%
+2026-10-05 15:58:34 | INFO     | lag_evaluation | lightgbm h=12: RMSE base 0.3888 | +23,25 0.3884 | ganho +0.12%
+2026-10-05 15:58:35 | INFO     | lag_evaluation | lightgbm h=24: RMSE base 0.4576 | +23,25 0.4530 | ganho +1.00%
+2026-10-05 15:58:35 | INFO     | lag_evaluation | Ganho médio 0.66% -> incluir 23/25: False; 17 atributos

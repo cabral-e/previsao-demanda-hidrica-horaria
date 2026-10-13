@@ -1,0 +1,5 @@
+2026-10-05 17:57:25 | INFO     | lightgbm | Tuning já realizado com mesma entrada e configuração; reutilizando.
+2026-10-05 17:58:46 | INFO     | lightgbm | lightgbm_rec h=1 [exp_20261005_1758_lightgbm_rec_h01_v001]: MAE teste 0.0522 | RMSE teste 0.0803 | t_treino 2.368s | t_prev 0.406s | mem 13.4 MB
+2026-10-05 17:58:55 | INFO     | lightgbm | lightgbm_rec h=6 [exp_20261005_1758_lightgbm_rec_h06_v001]: MAE teste 0.1838 | RMSE teste 0.2724 | t_treino 2.368s | t_prev 2.365s | mem 17.3 MB
+2026-10-05 17:59:14 | INFO     | lightgbm | lightgbm_rec h=12 [exp_20261005_1759_lightgbm_rec_h12_v001]: MAE teste 0.2384 | RMSE teste 0.3524 | t_treino 2.368s | t_prev 4.795s | mem 17.4 MB
+2026-10-05 17:59:51 | INFO     | lightgbm | lightgbm_rec h=24 [exp_20261005_1759_lightgbm_rec_h24_v001]: MAE teste 0.2763 | RMSE teste 0.3947 | t_treino 2.368s | t_prev 9.608s | mem 17.4 MB

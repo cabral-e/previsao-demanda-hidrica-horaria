@@ -1,0 +1,4 @@
+2026-10-05 15:04:04 | INFO     | inspection | Cópia criada: <PROJETO>\data\raw\SANEPAR_B_ALTO_2018_20.xlsx (sha256 41ef8a4ca7c58cfd)
+2026-10-05 15:04:16 | INFO     | inspection | Lido: (26280, 10); removidos {'rows_read': 26280, 'cols_read': 10, 'empty_rows_removed': 0, 'empty_cols_removed': 0}
+2026-10-05 15:04:17 | INFO     | inspection | Frequência dominante 0 days 01:00:00; ausentes 25; duplicados 1
+2026-10-05 15:04:17 | INFO     | inspection | Relatório: <PROJETO>\results\reports\01_inspecao.md | Parquet: <PROJETO>\data\interim\01_raw_loaded.parquet

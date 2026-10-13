@@ -1,0 +1,6 @@
+2026-10-05 19:37:41 | INFO     | make_figures | Figura de previsão: sarima
+2026-10-05 19:37:47 | INFO     | make_figures | Figura de previsão: svr
+2026-10-05 19:37:53 | INFO     | make_figures | Figura de previsão: lightgbm
+2026-10-05 19:37:59 | INFO     | make_figures | Figura de previsão: lightgbm_rec
+2026-10-05 19:38:06 | INFO     | make_figures | Figura de previsão: baseline
+2026-10-05 19:38:28 | INFO     | make_figures | 18 figuras de resultados geradas

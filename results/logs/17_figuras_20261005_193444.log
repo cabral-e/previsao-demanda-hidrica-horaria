@@ -1,0 +1,5 @@
+2026-10-05 19:34:54 | INFO     | make_figures | Figura de previsão: sarima
+2026-10-05 19:35:02 | INFO     | make_figures | Figura de previsão: svr
+2026-10-05 19:35:09 | INFO     | make_figures | Figura de previsão: lightgbm
+2026-10-05 19:35:16 | INFO     | make_figures | Figura de previsão: lightgbm_rec
+2026-10-05 19:35:25 | INFO     | make_figures | Figura de previsão: baseline

@@ -1,0 +1,172 @@
+project:
+  name: previsao_demanda_hidrica
+  seed: 42
+  language: pt
+
+paths:
+  # Caminho relativo à pasta do projeto (raiz deduzida em src/utils/paths.py).
+  # A base original NÃO é distribuída no repositório; coloque o arquivo nesse local para reproduzir.
+  raw_source: "../SANEPAR_B_ALTO_2018_20.xlsx"
+  raw_sheet: "Dados"
+
+data:
+  timestamp_column: Timestamp
+  target: LT01
+  start: "2018-01-01 00:00:00"
+  end: "2019-12-31 23:59:59"
+  # Significado informado pelo usuário em 2026-10-05 (ver results/reports/01b_confirmacoes_usuario.md)
+  variables:
+    B1:   {descricao: "Bomba de sucção 1 — frequência", unidade: "Hz", max: 60}
+    B2:   {descricao: "Bomba de sucção 2 — frequência", unidade: "Hz", max: 60}
+    B3:   {descricao: "Bomba de sucção 3 — frequência", unidade: "Hz", max: 60}
+    LT01: {descricao: "Nível do reservatório (RAP 01, Câmara 1)", unidade: "m"}
+    FT01: {descricao: "Vazão de entrada", unidade: "m3/h"}
+    FT02: {descricao: "Vazão de gravidade", unidade: "m3/h"}
+    FT03: {descricao: "Vazão de recalque", unidade: "m3/h"}
+    PT01: {descricao: "Pressão de sucção (PT01SU)", unidade: "mca"}
+    PT02: {descricao: "Pressão de recalque (PT02RBAL)", unidade: "mca"}
+  dst_confirmation_available: false   # usuário não consegue confirmar com a Sanepar
+  # Unidade (decisão do usuário, 2026-10-05): modelar e reportar em metros; série NÃO é convertida.
+  # Equivalente em volume apenas para exibição: V [m3] = factor * LT01 [m]
+  target_unit: "m"
+  volume_equivalent:
+    factor_m3_per_m: 555.2
+    source: "Tela do supervisório Sanepar (Bairro Alto, 20/08/2021): LT01 = 4,29 m <-> 2382 m3; LT02-LT04 confirmam ~555 m3/m"
+
+split:
+  # Decisão do usuário (2026-10-05): 0.80, conforme texto do TCC (seção 3.3).
+  # O corte é calculado sobre a grade horária completa do período (src/data/split.py),
+  # para ser idêntico na EDA (ETAPA 03) e na divisão formal (ETAPA 05).
+  train_fraction: 0.80
+  freq: "h"
+
+eda:
+  # Decisão do usuário (2026-10-05): EDA em duas camadas.
+  # Descritiva = período completo; inferencial (ADF/KPSS, ACF/PACF, STL) = somente treino.
+  acf_max_lag: 168          # 1 semana
+  stl_periods: [24, 168]    # diário e semanal
+  outlier_iqr_k: 1.5
+  jump_z_threshold: 5       # saltos horários |dif| > z desvios (sinalização, não remoção)
+
+treatment:
+  # Decisão do usuário (2026-10-05): manter os 37 episódios de nível baixo (operação real).
+  keep_low_level_episodes: true
+  # Decisões do usuário (2026-10-05), com base em results/reports/04_diagnostico.md:
+  # - sequência de medições contínua; rótulos de 2018-11-04 01:00 até a 1ª ocorrência de
+  #   2018-12-31 21:00 adiantados 1 h -> realinhar (nenhum valor criado ou descartado)
+  # - 2019-01-30 06–08 h: salto incompatível com o balanço de massa -> interpolar LT01
+  # - 2019-04-28 12 h: mantido (novo patamar persiste; sem base para corrigir)
+  dst_strategy: "realign"           # "realign" | "keep_labels"
+  duplicate_strategy: null          # só em keep_labels: "first" | "mean"
+  jump_strategy: "interpolate_segments"   # "keep" | "interpolate_segments"
+  jump_segments: [["2019-01-30 06:00", "2019-01-30 08:00"]]
+
+features:
+  # Decisões do usuário (2026-10-05). Convenção: origem t = último instante observado;
+  # lag_k = LT01(t + 1 − k)  ->  lag_1 = valor atual; lag_24 = mesma hora de (t+1) no dia anterior.
+  lags_base: [1, 2, 3, 6, 12, 24, 48, 168]
+  lags_candidates_extra: [23, 25]
+  # Estatísticas móveis SOMENTE com valores passados (janela termina em t, inclusive).
+  rolling_mean_windows: [6, 24, 168]   # tendência intradiária, nível diário, nível semanal
+  rolling_std_windows: [24, 168]       # variabilidade diária e semanal
+  # Calendário do instante-alvo (t + h), conhecido de antemão: senos/cossenos de hora e dia da semana.
+  calendar_cyclic: [hour, dayofweek]
+  use_month: false                     # decisão do usuário: mês não entra
+  exogenous: false         # univariado (B, FT, PT só com nova aprovação; PT01 ~ alvo)
+  # Avaliação de 23/25 SOMENTE no treino (validação cronológica interna). Regra fixada antes de rodar:
+  lag_eval:
+    inner_train_fraction: 0.80         # últimos 20% do treino = validação interna
+    horizons: [1, 6, 12, 24]           # estratégia direta (avaliação de atributos apenas)
+    models: [ridge, lightgbm]          # parâmetros padrão; sem tuning
+    include_if_mean_rmse_gain_at_least: 0.01   # incluir 23/25 se ganho relativo médio de RMSE >= 1%
+
+sarima:
+  # Decisões do usuário (2026-10-05):
+  seasonal_period: 24
+  d: 0                     # EDA: nível estacionário (ADF e KPSS concordam)
+  D: 1                     # diferenciação sazonal
+  weekly_calendar_exog: true   # senos/cossenos semanais ou indicadores de dia da semana (comparar na ETAPA 08)
+  # Proposta aprovada (2026-10-05) — seleção controlada e documentada:
+  selection_weeks: 26                  # seleção nas últimas 26 semanas do treino; ajuste final no treino inteiro
+  candidates: {p: [1, 2], q: [0, 1], P: [0, 1], Q: [1]}   # 8 combinações guiadas por ACF/PACF
+  criterion: bic                       # menor BIC (AIC reportado); não convergidos são excluídos
+  exog_for_order_selection: {kind: fourier, K: 2}
+  exog_candidates: [{kind: fourier, K: 2}, {kind: fourier, K: 3}, {kind: dow}]
+  ljungbox_lags: [24, 48]
+  maxiter: 200
+  # Implementação: diferença sazonal explícita z = y − y(−24); SARIMA(p,0,q)(P,0,Q)24 em z com
+  # exógenas também diferenciadas (equivalente a (p,0,q)(P,1,Q)24 com regressão); ŷ = ẑ + y(T−24).
+
+svr:
+  # Proposta aprovada (2026-10-05): padronização de atributos e alvo ajustada só nos dados de ajuste;
+  # estratégia direta; tuning controlado por horizonte na validação cronológica interna do treino.
+  # Sondagem (parâmetros padrão): 7–12 s/ajuste; 72–77% vetores de suporte em h ≥ 6 -> tuning justificado.
+  cache_size_mb: 200
+  inner_train_fraction: 0.80          # mesma validação interna da ETAPA 06
+  tuning:
+    phase1: {C: [0.3, 1, 3, 10], gamma_scale_multipliers: [0.3, 1, 3], epsilon: 0.1}
+    phase2_epsilon: [0.05, 0.2]       # sobre o melhor (C, gamma) da fase 1
+    metric: rmse                      # RMSE na validação interna; escolha por horizonte
+
+lightgbm:
+  # Proposta aprovada (2026-10-05): estratégia direta, mesmos atributos, seed única, 1 thread.
+  inner_train_fraction: 0.80
+  fixed: {learning_rate: 0.05, subsample: 0.8, subsample_freq: 1, colsample_bytree: 0.9,
+          objective: regression, deterministic: true, force_row_wise: true}
+  max_estimators: 2000
+  early_stopping_rounds: 100        # só na validação interna; ajuste final usa o nº de árvores encontrado
+  tuning:
+    num_leaves: [15, 31, 63]
+    min_child_samples: [20, 50]
+    reg_lambda: [0, 1]
+    metric: rmse
+
+evaluation:
+  # Protocolo aprovado pelo usuário (2026-10-05):
+  # - teste: TODAS as horas do teste são alvos, em cada horizonte; origem = alvo − h; pontos idênticos entre modelos
+  # - cada modelo é ajustado UMA vez no treino; não há reajuste no teste
+  # - em cada origem, usam-se as observações reais até a origem (inclusive do teste já decorrido)
+  # - treino: conjunto comum de alvos a partir de início + warmup (histórico completo p/ todos os atributos e horizontes)
+  train_eval_warmup_hours: 192   # 168 (maior janela) + 24 (maior horizonte)
+  memory_sampling_interval_s: 0.005   # amostragem de RSS (psutil) em execução separada da cronometragem
+
+baselines:
+  persistence: {}                # ŷ(T) = y(T − h)
+  seasonal_daily: {period: 24}   # ŷ(T) = y(T − 24)   (h ≤ 24; em h = 24 coincide com a persistência)
+  seasonal_weekly: {period: 168} # ŷ(T) = y(T − 168)
+
+models:
+  names: [baseline, sarima, svr, lightgbm]
+  horizons_hours: [1, 6, 12, 24]
+
+cost:
+  n_repeats: 3
+  n_jobs: 1              # fixar e registrar; mesmo valor para todos os modelos
+
+metrics:
+  error: [mae, rmse]
+
+composite_score:
+  # Decisão do usuário (2026-10-05): normalização B principal; A e C como robustez.
+  # B: E = RMSE / RMSE(melhor baseline do h);  T = mín-máx de log10(t_total) entre os modelos do h
+  # A: E = mín-máx(RMSE);                       T = idem B
+  # C: E e T = (posição − 1)/(n − 1)
+  # Modelos por h: 4 treináveis + melhor baseline. t_total = treino + previsão do h (sem tuning);
+  # variante "com_tuning": t_total + custo de tuning. MAE como verificação do erro.
+  alpha: 0.5             # ponto de partida (pesos iguais); sujeito a análise de sensibilidade
+  alpha_sensitivity: [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
+  main_normalization: B
+  # Decisão do usuário (2026-10-05), após achado do efeito estrutural do baseline (score do baseline = α por construção):
+  main_set: treinaveis          # principal: só os 4 treináveis; "com_baseline" = análise de sensibilidade
+
+plots:
+  ylabel_target: {pt: "Nível LT01 (m)", en: "LT01 level (m)"}
+  show_volume_equivalent: true   # eixo/coluna secundária em m3 (factor em data.volume_equivalent)
+  decimal_comma: true            # ABNT: vírgula decimal nas figuras (language = pt)
+  font_family: "Times New Roman"
+  font_fallback: "DejaVu Serif"
+  dpi: 300
+  figsize: [10, 7.5]
+  xtick_step: 100
+  window: null           # null = todo o teste; versão ampliada usa 1300 amostras
+  zoom_samples: 1300

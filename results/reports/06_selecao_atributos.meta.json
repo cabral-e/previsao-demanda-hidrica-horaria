@@ -1,0 +1,8 @@
+{
+  "artifact": "06_selecao_atributos.json",
+  "created_at": "2026-10-05T15:58:35",
+  "etapa": "06",
+  "input": "05_treino.parquet",
+  "input_sha256": "8ae58a8caddd2341d94baa9784e6e984f23d9edfbe7a7fe5453d26c52278d3c1",
+  "config_hash": "c950c944423844f2"
+}
